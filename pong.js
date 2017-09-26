@@ -216,6 +216,7 @@ class Pong
 		}
 	}
 
+	// Handler when ball is out of bounds on y-axis
 	bounceOnY() 
 	{
 		if (this.manager.alwaysSpeedup)
@@ -225,6 +226,7 @@ class Pong
 		this.ball.vel.y = -this.ball.vel.y;
 	}
 
+	// Handler if ball is out of bounds on x-axis
 	score() 
 	{
 		// Determine which player has got a point
